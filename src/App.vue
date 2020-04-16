@@ -1,13 +1,25 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <!-- <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link> -->
+      <!-- <sys-index></sys-index> -->
+      <movie-manage></movie-manage>
     </div>
-    <router-view/>
+    <!-- <router-view/> -->
   </div>
 </template>
 
+<script>
+// import sysIndex from './views/index.vue'
+import movieManage from './views/movie-manage/index.vue'
+export default {
+  components: {
+    // sysIndex,
+    movieManage
+  }
+}
+</script>
 <style lang="less">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
