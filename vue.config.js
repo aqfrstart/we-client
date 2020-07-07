@@ -15,11 +15,11 @@ module.exports = {
   devServer: {
     host: '0.0.0.0',
     proxy: {
-      '/api': {
-        target: 'http://localhost:8888',
+      '/ipa': {
+        target: 'http://152.136.124.165:8989',
         changeOrigin: true,
         pathRewrite: {
-          '^/api': '' // 路径重写
+          '^/ipa': '/ipa' // 路径重写
         }
       }
     },

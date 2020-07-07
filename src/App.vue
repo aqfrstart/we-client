@@ -1,12 +1,9 @@
 <template>
   <div id="app">
     <div id="nav">
-      <!-- <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> -->
-      <!-- <sys-index></sys-index> -->
-      <movie-manage></movie-manage>
+      <router-view />
+      <!-- <movie-manage></movie-manage> -->
     </div>
-    <!-- <router-view/> -->
   </div>
 </template>
 

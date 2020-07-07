@@ -1,22 +1,23 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+
+import MovieManage from '../views/movie-manage/index.vue'
+import Valid from '../views/movie-manage/components/valid.vue'
+import FilterGroup from '../views/movie-manage/components/filter-group.vue'
 
 Vue.use(VueRouter)
 
-const routes = [
-  {
+const routes = [{
     path: '/',
-    name: 'Home',
-    component: Home
+    component: MovieManage
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: '/valid',
+    component: Valid
+  },
+  {
+    path: '/group',
+    component: FilterGroup
   }
 ]
 
